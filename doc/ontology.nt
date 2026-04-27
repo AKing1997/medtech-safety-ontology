@@ -1,6 +1,11 @@
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://purl.org/dc/terms/created> "2026-04-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://purl.org/dc/terms/creator> "aking1997" .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://purl.org/dc/terms/title> "MedTech Safety & Traceability Ontology (EUDAMED-MDR)"@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://aking1997.github.io/medtech-safety-ontology/doc> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 # 
 # 
 # #################################################################
@@ -10,8 +15,32 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 
@@ -22,60 +51,60 @@
 # #################################################################
 # 
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a corrective action (FSCA) to the incident it addresses."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident
+<https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Incident> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a corrective action (FSCA) to the incident it addresses."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a specific risk category to the types of devices it generally affects."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affects device type"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType
+<https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a specific risk category to the types of devices it generally affects."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affects device type"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the identified IMDRF risk category."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#label> "associated with risk"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Incident> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the identified IMDRF risk category."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#label> "associated with risk"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a medical device to its manufacturer."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer
+<https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a medical device to its manufacturer."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the medical device involved in a specific incident."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involves device"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Incident> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the medical device involved in a specific incident."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involves device"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a manufacturer to the devices it produces (Inverse of hasManufacturer)."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "manufactures device"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a manufacturer to the devices it produces (Inverse of hasManufacturer)."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice> <http://www.w3.org/2000/01/rdf-schema#label> "manufactures device"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the manufacturer that reported the incident to EUDAMED."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy
+<https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Incident> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the manufacturer that reported the incident to EUDAMED."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/severity
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/severity> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of a risk."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#severity
+<https://aking1997.github.io/medtech-safety-ontology/doc#severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#severity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of a risk."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
 # 
 # 
 # 
@@ -86,211 +115,211 @@
 # #################################################################
 # 
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the corrective action was initiated."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date> <http://www.w3.org/2000/01/rdf-schema#label> "action_date"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#action_date
+<https://aking1997.github.io/medtech-safety-ontology/doc#action_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#action_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the corrective action was initiated."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#action_date> <http://www.w3.org/2000/01/rdf-schema#label> "action_date"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number> <http://www.w3.org/2000/01/rdf-schema#comment> "The regulatory authorization number of the manufacturer."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number> <http://www.w3.org/2000/01/rdf-schema#label> "authorization_number"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number
+<https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number> <http://www.w3.org/2000/01/rdf-schema#comment> "The regulatory authorization number of the manufacturer."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number> <http://www.w3.org/2000/01/rdf-schema#label> "authorization_number"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the corrective action was officially closed."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date> <http://www.w3.org/2000/01/rdf-schema#label> "closure_date"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#closure_date
+<https://aking1997.github.io/medtech-safety-ontology/doc#closure_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#closure_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the corrective action was officially closed."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#closure_date> <http://www.w3.org/2000/01/rdf-schema#label> "closure_date"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority> <http://www.w3.org/2000/01/rdf-schema#comment> "The national authority overseeing the manufacturer."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority> <http://www.w3.org/2000/01/rdf-schema#label> "competent_authority"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority
+<https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority> <http://www.w3.org/2000/01/rdf-schema#comment> "The national authority overseeing the manufacturer."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority> <http://www.w3.org/2000/01/rdf-schema#label> "competent_authority"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact email for the manufacturer."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email> <http://www.w3.org/2000/01/rdf-schema#label> "contact_email"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#contact_email
+<https://aking1997.github.io/medtech-safety-ontology/doc#contact_email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#contact_email> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact email for the manufacturer."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#contact_email> <http://www.w3.org/2000/01/rdf-schema#label> "contact_email"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if a corrective action was taken following the incident."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective_action_taken"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken
+<https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if a corrective action was taken following the incident."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective_action_taken"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected> <http://www.w3.org/2000/01/rdf-schema#comment> "List of countries affected by the incident or FSCA."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected> <http://www.w3.org/2000/01/rdf-schema#label> "countries_affected"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected
+<https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected> <http://www.w3.org/2000/01/rdf-schema#comment> "List of countries affected by the incident or FSCA."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected> <http://www.w3.org/2000/01/rdf-schema#label> "countries_affected"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/country
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country of origin for the manufacturer."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#country
+<https://aking1997.github.io/medtech-safety-ontology/doc#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country of origin for the manufacturer."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported> <http://www.w3.org/2000/01/rdf-schema#comment> "The country where the incident occurred."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported> <http://www.w3.org/2000/01/rdf-schema#label> "country_reported"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#country_reported
+<https://aking1997.github.io/medtech-safety-ontology/doc#country_reported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#country_reported> <http://www.w3.org/2000/01/rdf-schema#comment> "The country where the incident occurred."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#country_reported> <http://www.w3.org/2000/01/rdf-schema#label> "country_reported"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/description
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the event, risk, or action."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#description
+<https://aking1997.github.io/medtech-safety-ontology/doc#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#description> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the event, risk, or action."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the incident was first detected."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date> <http://www.w3.org/2000/01/rdf-schema#label> "detection_date"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#detection_date
+<https://aking1997.github.io/medtech-safety-ontology/doc#detection_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#detection_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the incident was first detected."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#detection_date> <http://www.w3.org/2000/01/rdf-schema#label> "detection_date"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique internal identifier for the device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id> <http://www.w3.org/2000/01/rdf-schema#label> "device_id"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#device_id
+<https://aking1997.github.io/medtech-safety-ontology/doc#device_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#device_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique internal identifier for the device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#device_id> <http://www.w3.org/2000/01/rdf-schema#label> "device_id"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The commercial name of the medical device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name> <http://www.w3.org/2000/01/rdf-schema#label> "device_name"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#device_name
+<https://aking1997.github.io/medtech-safety-ontology/doc#device_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#device_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The commercial name of the medical device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#device_name> <http://www.w3.org/2000/01/rdf-schema#label> "device_name"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of device units affected by a recall or alert."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected> <http://www.w3.org/2000/01/rdf-schema#label> "devices_affected"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected
+<https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of device units affected by a recall or alert."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected> <http://www.w3.org/2000/01/rdf-schema#label> "devices_affected"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the FSCA."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_fsca_ref"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the FSCA."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_fsca_ref"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the incident."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_incident_ref"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the incident."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_incident_ref"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn> <http://www.w3.org/2000/01/rdf-schema#comment> "The Single Registration Number of the manufacturer in EUDAMED."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_srn"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn> <http://www.w3.org/2000/01/rdf-schema#comment> "The Single Registration Number of the manufacturer in EUDAMED."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn> <http://www.w3.org/2000/01/rdf-schema#label> "eudamed_srn"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The exact date the adverse event took place."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date> <http://www.w3.org/2000/01/rdf-schema#label> "event_date"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#event_date
+<https://aking1997.github.io/medtech-safety-ontology/doc#event_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#event_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The exact date the adverse event took place."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#event_date> <http://www.w3.org/2000/01/rdf-schema#label> "event_date"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the Field Safety Corrective Action."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id> <http://www.w3.org/2000/01/rdf-schema#label> "fsca_id"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id
+<https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the Field Safety Corrective Action."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id> <http://www.w3.org/2000/01/rdf-schema#label> "fsca_id"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code> <http://www.w3.org/2000/01/rdf-schema#comment> "The official IMDRF code identifying the type of risk or event."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code> <http://www.w3.org/2000/01/rdf-schema#label> "imdrf_code"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code
+<https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code> <http://www.w3.org/2000/01/rdf-schema#comment> "The official IMDRF code identifying the type of risk or event."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code> <http://www.w3.org/2000/01/rdf-schema#label> "imdrf_code"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the incident."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id> <http://www.w3.org/2000/01/rdf-schema#label> "incident_id"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#incident_id
+<https://aking1997.github.io/medtech-safety-ontology/doc#incident_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#incident_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the incident."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#incident_id> <http://www.w3.org/2000/01/rdf-schema#label> "incident_id"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The medical purpose for which the device is intended."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended_purpose"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose
+<https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The medical purpose for which the device is intended."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended_purpose"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is active (powered)."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active> <http://www.w3.org/2000/01/rdf-schema#label> "is_active"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#is_active
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_active> <http://www.w3.org/2000/01/rdf-schema#domain> <https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_active> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is active (powered)."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_active> <http://www.w3.org/2000/01/rdf-schema#label> "is_active"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is implantable."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable> <http://www.w3.org/2000/01/rdf-schema#label> "is_implantable"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is implantable."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable> <http://www.w3.org/2000/01/rdf-schema#label> "is_implantable"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is an IVD."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd> <http://www.w3.org/2000/01/rdf-schema#label> "is_ivd"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is an IVD."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd> <http://www.w3.org/2000/01/rdf-schema#label> "is_ivd"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is reusable."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable> <http://www.w3.org/2000/01/rdf-schema#label> "is_reusable"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean flag indicating if the device is reusable."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable> <http://www.w3.org/2000/01/rdf-schema#label> "is_reusable"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the manufacturer."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer_id"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the manufacturer."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer_id"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/name
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the entity."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#name
+<https://aking1997.github.io/medtech-safety-ontology/doc#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the entity."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "The clinical outcome of the patient following the incident."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#outcome
+<https://aking1997.github.io/medtech-safety-ontology/doc#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "The clinical outcome of the patient following the incident."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age> <http://www.w3.org/2000/01/rdf-schema#comment> "The age of the patient involved in the incident."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age> <http://www.w3.org/2000/01/rdf-schema#label> "patient_age"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#patient_age
+<https://aking1997.github.io/medtech-safety-ontology/doc#patient_age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#patient_age> <http://www.w3.org/2000/01/rdf-schema#comment> "The age of the patient involved in the incident."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#patient_age> <http://www.w3.org/2000/01/rdf-schema#label> "patient_age"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological sex of the patient."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex> <http://www.w3.org/2000/01/rdf-schema#label> "patient_sex"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex
+<https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological sex of the patient."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex> <http://www.w3.org/2000/01/rdf-schema#label> "patient_sex"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/probability
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/probability> <http://www.w3.org/2000/01/rdf-schema#comment> "The likelihood of the risk occurring."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#probability
+<https://aking1997.github.io/medtech-safety-ontology/doc#probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#probability> <http://www.w3.org/2000/01/rdf-schema#comment> "The likelihood of the risk occurring."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework> <http://www.w3.org/2000/01/rdf-schema#comment> "The legal framework applicable to the device (e.g., MDR or IVDR)."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework> <http://www.w3.org/2000/01/rdf-schema#label> "regulatory_framework"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework
+<https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework> <http://www.w3.org/2000/01/rdf-schema#comment> "The legal framework applicable to the device (e.g., MDR or IVDR)."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework> <http://www.w3.org/2000/01/rdf-schema#label> "regulatory_framework"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the incident was reported to authorities."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date> <http://www.w3.org/2000/01/rdf-schema#label> "report_date"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#report_date
+<https://aking1997.github.io/medtech-safety-ontology/doc#report_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#report_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the incident was reported to authorities."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#report_date> <http://www.w3.org/2000/01/rdf-schema#label> "report_date"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category> <http://www.w3.org/2000/01/rdf-schema#comment> "The overarching category of the risk."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category> <http://www.w3.org/2000/01/rdf-schema#label> "risk_category"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#risk_category
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_category> <http://www.w3.org/2000/01/rdf-schema#comment> "The overarching category of the risk."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_category> <http://www.w3.org/2000/01/rdf-schema#label> "risk_category"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class> <http://www.w3.org/2000/01/rdf-schema#comment> "The regulatory risk classification of the device (e.g., Class III)."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class> <http://www.w3.org/2000/01/rdf-schema#label> "risk_class"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#risk_class
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_class> <http://www.w3.org/2000/01/rdf-schema#comment> "The regulatory risk classification of the device (e.g., Class III)."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_class> <http://www.w3.org/2000/01/rdf-schema#label> "risk_class"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the risk record."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id> <http://www.w3.org/2000/01/rdf-schema#label> "risk_id"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#risk_id
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for the risk record."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_id> <http://www.w3.org/2000/01/rdf-schema#label> "risk_id"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific name of the identified risk."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name> <http://www.w3.org/2000/01/rdf-schema#label> "risk_name"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#risk_name
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific name of the identified risk."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#risk_name> <http://www.w3.org/2000/01/rdf-schema#label> "risk_name"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/scope
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/scope> <http://www.w3.org/2000/01/rdf-schema#comment> "The scope of affected products in an FSCA."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#scope
+<https://aking1997.github.io/medtech-safety-ontology/doc#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "The scope of affected products in an FSCA."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/status
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/status> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of the incident or FSCA (e.g., Open, Closed)."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#status
+<https://aking1997.github.io/medtech-safety-ontology/doc#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#status> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of the incident or FSCA (e.g., Open, Closed)."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di> <http://www.w3.org/2000/01/rdf-schema#comment> "The Unique Device Identifier - Device Identifier."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di> <http://www.w3.org/2000/01/rdf-schema#label> "udi_di"@en .
+# https://aking1997.github.io/medtech-safety-ontology/doc#udi_di
+<https://aking1997.github.io/medtech-safety-ontology/doc#udi_di> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#udi_di> <http://www.w3.org/2000/01/rdf-schema#comment> "The Unique Device Identifier - Device Identifier."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#udi_di> <http://www.w3.org/2000/01/rdf-schema#label> "udi_di"@en .
 # 
 # 
 # 
@@ -301,175 +330,175 @@
 # #################################################################
 # 
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> <http://www.w3.org/2002/07/owl#disjointWith> <file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device that relies on a source of electrical energy or any source of power."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#comment> "An implantable device that relies on an energy source."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "Active Implant"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk arising from biological or chemical contamination of the device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Contamination Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk arising from software vulnerabilities or unauthorized access."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/Device
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device according to the MDR/IVDR regulatory framework."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to false positives or false negatives in IVD devices."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> <http://www.w3.org/2000/01/rdf-schema#comment> "Field Safety Corrective Action taken to mitigate a risk."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> <http://www.w3.org/2000/01/rdf-schema#label> "F S C A"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An active medical device which is intended to be totally or partially introduced into the human body."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be totally introduced into the human body through clinical intervention."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "Action taken to correct or update a device without removing it from the user."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Device> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device intended by the manufacturer for the examination of specimens derived from the human body."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "An adverse event or serious incident involving a medical device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of the patient developing an infection due to the device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of physical harm or tissue damage to the patient."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk due to electromagnetic or environmental interference."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Interference Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of the device failing to perform its intended function."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The corporate entity responsible for manufacturing the medical device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to the degradation, wear, or toxicity of the device materials."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Material Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "Action to return the medical device to the manufacturer or supplier."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <file:///home/scarulli/chowlk_project/Chowlk/httpns/severity> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "A potential hazard or clinical risk associated with the use of a device."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication sent to users detailing important safety information."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An IVD device intended by the manufacturer to be able to be used by lay persons."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Self Test Device"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that directly or indirectly led to death or a serious deterioration in the state of health."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal notification to users regarding device usage instructions."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
-# 
 # http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A corporate or administrative entity."@en .
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> <http://www.w3.org/2002/07/owl#disjointWith> <https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device that relies on a source of electrical energy or any source of power."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#comment> "An implantable device that relies on an energy source."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "Active Implant"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk arising from biological or chemical contamination of the device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Contamination Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk arising from software vulnerabilities or unauthorized access."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#Device
+<https://aking1997.github.io/medtech-safety-ontology/doc#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device according to the MDR/IVDR regulatory framework."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to false positives or false negatives in IVD devices."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#FSCA
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> <http://www.w3.org/2000/01/rdf-schema#comment> "Field Safety Corrective Action taken to mitigate a risk."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> <http://www.w3.org/2000/01/rdf-schema#label> "F S C A"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An active medical device which is intended to be totally or partially introduced into the human body."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be totally introduced into the human body through clinical intervention."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection
+<https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "Action taken to correct or update a device without removing it from the user."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Device> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device intended by the manufacturer for the examination of specimens derived from the human body."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#Incident
+<https://aking1997.github.io/medtech-safety-ontology/doc#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "An adverse event or serious incident involving a medical device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of the patient developing an infection due to the device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of physical harm or tissue damage to the patient."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk due to electromagnetic or environmental interference."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Interference Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of the device failing to perform its intended function."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer
+<https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The corporate entity responsible for manufacturing the medical device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk
+<https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Risk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to the degradation, wear, or toxicity of the device materials."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Material Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#Recall
+<https://aking1997.github.io/medtech-safety-ontology/doc#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "Action to return the medical device to the manufacturer or supplier."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#Risk
+<https://aking1997.github.io/medtech-safety-ontology/doc#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://aking1997.github.io/medtech-safety-ontology/doc#severity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "A potential hazard or clinical risk associated with the use of a device."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert
+<https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication sent to users detailing important safety information."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice
+<https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An IVD device intended by the manufacturer to be able to be used by lay persons."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Self Test Device"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident
+<https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#Incident> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that directly or indirectly led to death or a serious deterioration in the state of health."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice
+<https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://aking1997.github.io/medtech-safety-ontology/doc#FSCA> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal notification to users regarding device usage instructions."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
 # 
 # 
 # 
@@ -480,72 +509,72 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Ventricular_assist_device> .
-<http://dbpedia.org/resource/Ventricular_assist_device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer> <file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id> "DEV-001" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name> "HeartMate 3 LVAD" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of an active implantable device from dispositivos.csv."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
-# 
-# http://dbpedia.org/resource/Ventricular_assist_device
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Product_recall> .
-<http://dbpedia.org/resource/Product_recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident> <file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date> "2024-02-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id> "FSCA-001" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/status> "Open" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Field safety corrective action from acciones_correctivas.csv."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert HeartMate 3"@en .
-# 
-# http://dbpedia.org/resource/Product_recall
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk> <file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice> <file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy> <file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id> "INC-001" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age> "58"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date> "2024-01-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident report extracted from incidentes.csv."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Serious patient injury - embolic stroke"@en .
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Medtronic> .
+# http://dbpedia.org/resource/Medtronic
 <http://dbpedia.org/resource/Medtronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice> <file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/country> "Ireland" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id> "MAN-001" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <file:///home/scarulli/chowlk_project/Chowlk/httpns/name> "Medtronic plc" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Medtronic plc, extracted from fabricantes.csv."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+<http://dbpedia.org/resource/Medtronic> <http://www.w3.org/2002/07/owl#sameAs> <https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> .
 # 
-# http://dbpedia.org/resource/Medtronic
-# 
-# file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk> .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003> <file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id> "RSK-003" .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk instance representing device-related thrombosis from riesgos.csv."@en .
-<file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombosis - device-related"@en .
-# 
-# http://dbpedia.org/resource/Medtronic
+# https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001
 # 
 # http://dbpedia.org/resource/Product_recall
+<http://dbpedia.org/resource/Product_recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Product_recall> <http://www.w3.org/2002/07/owl#sameAs> <https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001
 # 
 # http://dbpedia.org/resource/Ventricular_assist_device
+<http://dbpedia.org/resource/Ventricular_assist_device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Ventricular_assist_device> <http://www.w3.org/2002/07/owl#sameAs> <https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer> <https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <https://aking1997.github.io/medtech-safety-ontology/doc#device_id> "DEV-001" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <https://aking1997.github.io/medtech-safety-ontology/doc#device_name> "HeartMate 3 LVAD" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <https://aking1997.github.io/medtech-safety-ontology/doc#is_active> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of an active implantable device from dispositivos.csv."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident> <https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <https://aking1997.github.io/medtech-safety-ontology/doc#action_date> "2024-02-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id> "FSCA-001" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <https://aking1997.github.io/medtech-safety-ontology/doc#status> "Open" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Field safety corrective action from acciones_correctivas.csv."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert HeartMate 3"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#INC-001
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk> <https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice> <https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy> <https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <https://aking1997.github.io/medtech-safety-ontology/doc#incident_id> "INC-001" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <https://aking1997.github.io/medtech-safety-ontology/doc#patient_age> "58"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <https://aking1997.github.io/medtech-safety-ontology/doc#report_date> "2024-01-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident report extracted from incidentes.csv."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "Serious patient injury - embolic stroke"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice> <https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <https://aking1997.github.io/medtech-safety-ontology/doc#country> "Ireland" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id> "MAN-001" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <https://aking1997.github.io/medtech-safety-ontology/doc#name> "Medtronic plc" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance representing Medtronic plc, extracted from fabricantes.csv."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+# 
+# https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003
+<https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk> .
+<https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003> <https://aking1997.github.io/medtech-safety-ontology/doc#risk_id> "RSK-003" .
+<https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk instance representing device-related thrombosis from riesgos.csv."@en .
+<https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombosis - device-related"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,15 +1,21 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/"
-     xml:base="file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/"
+<rdf:RDF xmlns="https://aking1997.github.io/medtech-safety-ontology/doc#"
+     xml:base="https://aking1997.github.io/medtech-safety-ontology/doc"
+     xmlns:doc="https://aking1997.github.io/medtech-safety-ontology/doc#"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:httpns="file:///home/scarulli/chowlk_project/Chowlk/httpns/">
-    <owl:Ontology rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/">
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-27</terms:created>
+        <terms:creator>aking1997</terms:creator>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">MedTech Safety &amp; Traceability Ontology (EUDAMED-MDR)</terms:title>
         <rdfs:comment xml:lang="en">Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions.</rdfs:comment>
+        <owl:versionInfo>1.0</owl:versionInfo>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
     </owl:Ontology>
     
@@ -27,10 +33,57 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
     <!-- https://w3id.org/mod#createdWith -->
 
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -46,95 +99,95 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Incident"/>
         <rdfs:comment xml:lang="en">Connects a corrective action (FSCA) to the incident it addresses.</rdfs:comment>
         <rdfs:label xml:lang="en">addresses incident</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
         <rdfs:comment xml:lang="en">Links a specific risk category to the types of devices it generally affects.</rdfs:comment>
         <rdfs:label xml:lang="en">affects device type</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Incident"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Links an incident to the identified IMDRF risk category.</rdfs:comment>
         <rdfs:label xml:lang="en">associated with risk</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"/>
         <rdfs:comment xml:lang="en">Links a medical device to its manufacturer.</rdfs:comment>
         <rdfs:label xml:lang="en">has manufacturer</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Incident"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
         <rdfs:comment xml:lang="en">Indicates the medical device involved in a specific incident.</rdfs:comment>
         <rdfs:label xml:lang="en">involves device</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
         <rdfs:comment xml:lang="en">Links a manufacturer to the devices it produces (Inverse of hasManufacturer).</rdfs:comment>
         <rdfs:label xml:lang="en">manufactures device</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"/>
-        <rdfs:range rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Incident"/>
+        <rdfs:range rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"/>
         <rdfs:comment xml:lang="en">Identifies the manufacturer that reported the incident to EUDAMED.</rdfs:comment>
         <rdfs:label xml:lang="en">reported by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/severity -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#severity -->
 
 
-    <owl:ObjectProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/severity">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:ObjectProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#severity">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">The severity level of a risk.</rdfs:comment>
         <rdfs:label xml:lang="en">severity</rdfs:label>
     </owl:ObjectProperty>
@@ -153,411 +206,411 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#action_date -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#action_date">
         <rdfs:comment xml:lang="en">The date when the corrective action was initiated.</rdfs:comment>
         <rdfs:label xml:lang="en">action_date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number">
         <rdfs:comment xml:lang="en">The regulatory authorization number of the manufacturer.</rdfs:comment>
         <rdfs:label xml:lang="en">authorization_number</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#closure_date -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#closure_date">
         <rdfs:comment xml:lang="en">The date when the corrective action was officially closed.</rdfs:comment>
         <rdfs:label xml:lang="en">closure_date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority">
         <rdfs:comment xml:lang="en">The national authority overseeing the manufacturer.</rdfs:comment>
         <rdfs:label xml:lang="en">competent_authority</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#contact_email -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#contact_email">
         <rdfs:comment xml:lang="en">Contact email for the manufacturer.</rdfs:comment>
         <rdfs:label xml:lang="en">contact_email</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken">
         <rdfs:comment xml:lang="en">Indicates if a corrective action was taken following the incident.</rdfs:comment>
         <rdfs:label xml:lang="en">corrective_action_taken</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected">
         <rdfs:comment xml:lang="en">List of countries affected by the incident or FSCA.</rdfs:comment>
         <rdfs:label xml:lang="en">countries_affected</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/country -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#country -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/country">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#country">
         <rdfs:comment xml:lang="en">The country of origin for the manufacturer.</rdfs:comment>
         <rdfs:label xml:lang="en">country</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#country_reported -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#country_reported">
         <rdfs:comment xml:lang="en">The country where the incident occurred.</rdfs:comment>
         <rdfs:label xml:lang="en">country_reported</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/description -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#description -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/description">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#description">
         <rdfs:comment xml:lang="en">A textual description of the event, risk, or action.</rdfs:comment>
         <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#detection_date -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#detection_date">
         <rdfs:comment xml:lang="en">The date when the incident was first detected.</rdfs:comment>
         <rdfs:label xml:lang="en">detection_date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#device_id -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#device_id">
         <rdfs:comment xml:lang="en">The unique internal identifier for the device.</rdfs:comment>
         <rdfs:label xml:lang="en">device_id</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#device_name -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#device_name">
         <rdfs:comment xml:lang="en">The commercial name of the medical device.</rdfs:comment>
         <rdfs:label xml:lang="en">device_name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected">
         <rdfs:comment xml:lang="en">The number of device units affected by a recall or alert.</rdfs:comment>
         <rdfs:label xml:lang="en">devices_affected</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref">
         <rdfs:comment xml:lang="en">The official EUDAMED reference number for the FSCA.</rdfs:comment>
         <rdfs:label xml:lang="en">eudamed_fsca_ref</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref">
         <rdfs:comment xml:lang="en">The official EUDAMED reference number for the incident.</rdfs:comment>
         <rdfs:label xml:lang="en">eudamed_incident_ref</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn">
         <rdfs:comment xml:lang="en">The Single Registration Number of the manufacturer in EUDAMED.</rdfs:comment>
         <rdfs:label xml:lang="en">eudamed_srn</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#event_date -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#event_date">
         <rdfs:comment xml:lang="en">The exact date the adverse event took place.</rdfs:comment>
         <rdfs:label xml:lang="en">event_date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id">
         <rdfs:comment xml:lang="en">The unique identifier for the Field Safety Corrective Action.</rdfs:comment>
         <rdfs:label xml:lang="en">fsca_id</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code">
         <rdfs:comment xml:lang="en">The official IMDRF code identifying the type of risk or event.</rdfs:comment>
         <rdfs:label xml:lang="en">imdrf_code</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#incident_id -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#incident_id">
         <rdfs:comment xml:lang="en">The unique identifier for the incident.</rdfs:comment>
         <rdfs:label xml:lang="en">incident_id</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose">
         <rdfs:comment xml:lang="en">The medical purpose for which the device is intended.</rdfs:comment>
         <rdfs:label xml:lang="en">intended_purpose</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#is_active -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active">
-        <rdfs:domain rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice"/>
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#is_active">
+        <rdfs:domain rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice"/>
         <rdfs:comment xml:lang="en">Boolean flag indicating if the device is active (powered).</rdfs:comment>
         <rdfs:label xml:lang="en">is_active</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable">
         <rdfs:comment xml:lang="en">Boolean flag indicating if the device is implantable.</rdfs:comment>
         <rdfs:label xml:lang="en">is_implantable</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd">
         <rdfs:comment xml:lang="en">Boolean flag indicating if the device is an IVD.</rdfs:comment>
         <rdfs:label xml:lang="en">is_ivd</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable">
         <rdfs:comment xml:lang="en">Boolean flag indicating if the device is reusable.</rdfs:comment>
         <rdfs:label xml:lang="en">is_reusable</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id">
         <rdfs:comment xml:lang="en">The unique identifier for the manufacturer.</rdfs:comment>
         <rdfs:label xml:lang="en">manufacturer_id</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/name -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#name -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/name">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#name">
         <rdfs:comment xml:lang="en">The name of the entity.</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#outcome -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#outcome">
         <rdfs:comment xml:lang="en">The clinical outcome of the patient following the incident.</rdfs:comment>
         <rdfs:label xml:lang="en">outcome</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#patient_age -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#patient_age">
         <rdfs:comment xml:lang="en">The age of the patient involved in the incident.</rdfs:comment>
         <rdfs:label xml:lang="en">patient_age</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex">
         <rdfs:comment xml:lang="en">The biological sex of the patient.</rdfs:comment>
         <rdfs:label xml:lang="en">patient_sex</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/probability -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#probability -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/probability">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#probability">
         <rdfs:comment xml:lang="en">The likelihood of the risk occurring.</rdfs:comment>
         <rdfs:label xml:lang="en">probability</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework">
         <rdfs:comment xml:lang="en">The legal framework applicable to the device (e.g., MDR or IVDR).</rdfs:comment>
         <rdfs:label xml:lang="en">regulatory_framework</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#report_date -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#report_date">
         <rdfs:comment xml:lang="en">The date when the incident was reported to authorities.</rdfs:comment>
         <rdfs:label xml:lang="en">report_date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#risk_category -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#risk_category">
         <rdfs:comment xml:lang="en">The overarching category of the risk.</rdfs:comment>
         <rdfs:label xml:lang="en">risk_category</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#risk_class -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#risk_class">
         <rdfs:comment xml:lang="en">The regulatory risk classification of the device (e.g., Class III).</rdfs:comment>
         <rdfs:label xml:lang="en">risk_class</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#risk_id -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#risk_id">
         <rdfs:comment xml:lang="en">The unique identifier for the risk record.</rdfs:comment>
         <rdfs:label xml:lang="en">risk_id</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#risk_name -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#risk_name">
         <rdfs:comment xml:lang="en">The specific name of the identified risk.</rdfs:comment>
         <rdfs:label xml:lang="en">risk_name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/scope -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#scope -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/scope">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#scope">
         <rdfs:comment xml:lang="en">The scope of affected products in an FSCA.</rdfs:comment>
         <rdfs:label xml:lang="en">scope</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/status -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#status -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/status">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#status">
         <rdfs:comment xml:lang="en">The current status of the incident or FSCA (e.g., Open, Closed).</rdfs:comment>
         <rdfs:label xml:lang="en">status</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#udi_di -->
 
 
-    <owl:DatatypeProperty rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di">
+    <owl:DatatypeProperty rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#udi_di">
         <rdfs:comment xml:lang="en">The Unique Device Identifier - Device Identifier.</rdfs:comment>
         <rdfs:label xml:lang="en">udi_di</rdfs:label>
     </owl:DatatypeProperty>
@@ -576,58 +629,68 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice -->
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
-        <owl:disjointWith rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:comment xml:lang="en">A corporate or administrative entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice -->
+
+
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
+        <owl:disjointWith rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice"/>
         <rdfs:comment xml:lang="en">A medical device that relies on a source of electrical energy or any source of power.</rdfs:comment>
         <rdfs:label xml:lang="en">Active Device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice"/>
         <rdfs:comment xml:lang="en">An implantable device that relies on an energy source.</rdfs:comment>
         <rdfs:label xml:lang="en">Active Implant</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk arising from biological or chemical contamination of the device.</rdfs:comment>
         <rdfs:label xml:lang="en">Contamination Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk arising from software vulnerabilities or unauthorized access.</rdfs:comment>
         <rdfs:label xml:lang="en">Cybersecurity Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/Device -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#Device -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device">
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#Device">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer"/>
+                <owl:onProperty rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -637,24 +700,24 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk related to false positives or false negatives in IVD devices.</rdfs:comment>
         <rdfs:label xml:lang="en">Diagnostic Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#FSCA -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA">
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident"/>
+                <owl:onProperty rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -664,69 +727,69 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice"/>
         <rdfs:comment xml:lang="en">An active medical device which is intended to be totally or partially introduced into the human body.</rdfs:comment>
         <rdfs:label xml:lang="en">Implantable Active Device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
         <rdfs:comment xml:lang="en">A device intended to be totally introduced into the human body through clinical intervention.</rdfs:comment>
         <rdfs:label xml:lang="en">Implantable Device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"/>
         <rdfs:comment xml:lang="en">Action taken to correct or update a device without removing it from the user.</rdfs:comment>
         <rdfs:label xml:lang="en">In Situ Correction</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Device"/>
         <rdfs:comment xml:lang="en">A medical device intended by the manufacturer for the examination of specimens derived from the human body.</rdfs:comment>
         <rdfs:label xml:lang="en">In Vitro Diagnostic Device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#Incident -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident">
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#Incident">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk"/>
+                <owl:onProperty rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice"/>
+                <owl:onProperty rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy"/>
+                <owl:onProperty rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -736,54 +799,54 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk of the patient developing an infection due to the device.</rdfs:comment>
         <rdfs:label xml:lang="en">Infection Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk of physical harm or tissue damage to the patient.</rdfs:comment>
         <rdfs:label xml:lang="en">Injury Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk due to electromagnetic or environmental interference.</rdfs:comment>
         <rdfs:label xml:lang="en">Interference Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk of the device failing to perform its intended function.</rdfs:comment>
         <rdfs:label xml:lang="en">Malfunction Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer">
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment xml:lang="en">The corporate entity responsible for manufacturing the medical device.</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
@@ -791,35 +854,35 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Risk"/>
         <rdfs:comment xml:lang="en">Risk related to the degradation, wear, or toxicity of the device materials.</rdfs:comment>
         <rdfs:label xml:lang="en">Material Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#Recall -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#Recall">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"/>
         <rdfs:comment xml:lang="en">Action to return the medical device to the manufacturer or supplier.</rdfs:comment>
         <rdfs:label xml:lang="en">Recall</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#Risk -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk">
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#Risk">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/severity"/>
+                <owl:onProperty rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#severity"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -829,56 +892,46 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"/>
         <rdfs:comment xml:lang="en">Communication sent to users detailing important safety information.</rdfs:comment>
         <rdfs:label xml:lang="en">Safety Alert</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice"/>
         <rdfs:comment xml:lang="en">An IVD device intended by the manufacturer to be able to be used by lay persons.</rdfs:comment>
         <rdfs:label xml:lang="en">Self Test Device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Incident"/>
         <rdfs:comment xml:lang="en">An incident that directly or indirectly led to death or a serious deterioration in the state of health.</rdfs:comment>
         <rdfs:label xml:lang="en">Serious Incident</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice -->
 
 
-    <owl:Class rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice">
-        <rdfs:subClassOf rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"/>
+    <owl:Class rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice">
+        <rdfs:subClassOf rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"/>
         <rdfs:comment xml:lang="en">A formal notification to users regarding device usage instructions.</rdfs:comment>
         <rdfs:label xml:lang="en">User Notice</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
-        <rdfs:comment xml:lang="en">A corporate or administrative entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Organization</rdfs:label>
     </owl:Class>
     
 
@@ -895,123 +948,126 @@
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001 -->
+    <!-- http://dbpedia.org/resource/Medtronic -->
 
 
-    <owl:NamedIndividual rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001">
-        <rdf:type rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice"/>
-        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Ventricular_assist_device"/>
-        <httpns:hasManufacturer rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001"/>
-        <httpns:device_id>DEV-001</httpns:device_id>
-        <httpns:device_name>HeartMate 3 LVAD</httpns:device_name>
-        <httpns:is_active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</httpns:is_active>
-        <httpns:is_implantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</httpns:is_implantable>
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Medtronic">
+        <owl:sameAs rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001 -->
+
+
+    <rdf:Description rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Product_recall -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Product_recall">
+        <owl:sameAs rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001 -->
+
+
+    <rdf:Description rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ventricular_assist_device -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ventricular_assist_device">
+        <owl:sameAs rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001 -->
+
+
+    <rdf:Description rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"/>
+    
+
+
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001">
+        <rdf:type rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice"/>
+        <hasManufacturer rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"/>
+        <device_id>DEV-001</device_id>
+        <device_name>HeartMate 3 LVAD</device_name>
+        <is_active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_active>
+        <is_implantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_implantable>
         <rdfs:comment xml:lang="en">Instance of an active implantable device from dispositivos.csv.</rdfs:comment>
         <rdfs:label xml:lang="en">HeartMate 3 LVAD</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ventricular_assist_device -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001 -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ventricular_assist_device"/>
-    
-
-
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001 -->
-
-
-    <owl:NamedIndividual rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001">
-        <rdf:type rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert"/>
-        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Product_recall"/>
-        <httpns:addressesIncident rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001"/>
-        <httpns:action_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</httpns:action_date>
-        <httpns:fsca_id>FSCA-001</httpns:fsca_id>
-        <httpns:status>Open</httpns:status>
+    <owl:NamedIndividual rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001">
+        <rdf:type rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert"/>
+        <addressesIncident rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#INC-001"/>
+        <action_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</action_date>
+        <fsca_id>FSCA-001</fsca_id>
+        <status>Open</status>
         <rdfs:comment xml:lang="en">Field safety corrective action from acciones_correctivas.csv.</rdfs:comment>
         <rdfs:label xml:lang="en">Safety Alert HeartMate 3</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Product_recall -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#INC-001 -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Product_recall"/>
-    
-
-
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001 -->
-
-
-    <owl:NamedIndividual rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001">
-        <rdf:type rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident"/>
-        <httpns:associatedWithRisk rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003"/>
-        <httpns:involvesDevice rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001"/>
-        <httpns:reportedBy rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001"/>
-        <httpns:incident_id>INC-001</httpns:incident_id>
-        <httpns:patient_age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</httpns:patient_age>
-        <httpns:report_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T00:00:00</httpns:report_date>
+    <owl:NamedIndividual rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#INC-001">
+        <rdf:type rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident"/>
+        <associatedWithRisk rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003"/>
+        <involvesDevice rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"/>
+        <reportedBy rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"/>
+        <incident_id>INC-001</incident_id>
+        <patient_age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</patient_age>
+        <report_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T00:00:00</report_date>
         <rdfs:comment xml:lang="en">Incident report extracted from incidentes.csv.</rdfs:comment>
         <rdfs:label xml:lang="en">Serious patient injury - embolic stroke</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001 -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001 -->
 
 
-    <owl:NamedIndividual rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001">
-        <rdf:type rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"/>
-        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Medtronic"/>
-        <httpns:manufacturesDevice rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001"/>
-        <httpns:country>Ireland</httpns:country>
-        <httpns:manufacturer_id>MAN-001</httpns:manufacturer_id>
-        <httpns:name>Medtronic plc</httpns:name>
+    <owl:NamedIndividual rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001">
+        <rdf:type rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"/>
+        <manufacturesDevice rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"/>
+        <country>Ireland</country>
+        <manufacturer_id>MAN-001</manufacturer_id>
+        <name>Medtronic plc</name>
         <rdfs:comment xml:lang="en">Instance representing Medtronic plc, extracted from fabricantes.csv.</rdfs:comment>
         <rdfs:label xml:lang="en">Medtronic plc</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Medtronic -->
+    <!-- https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003 -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Medtronic"/>
-    
-
-
-    <!-- file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003 -->
-
-
-    <owl:NamedIndividual rdf:about="file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003">
-        <rdf:type rdf:resource="file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk"/>
-        <httpns:risk_id>RSK-003</httpns:risk_id>
+    <owl:NamedIndividual rdf:about="https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003">
+        <rdf:type rdf:resource="https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk"/>
+        <risk_id>RSK-003</risk_id>
         <rdfs:comment xml:lang="en">Risk instance representing device-related thrombosis from riesgos.csv.</rdfs:comment>
         <rdfs:label xml:lang="en">Thrombosis - device-related</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/resource/Medtronic -->
-
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Medtronic"/>
-    
-
-
-    <!-- http://dbpedia.org/resource/Product_recall -->
-
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Product_recall"/>
-    
-
-
-    <!-- http://dbpedia.org/resource/Ventricular_assist_device -->
-
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ventricular_assist_device"/>
 </rdf:RDF>
 
 

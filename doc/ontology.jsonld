@@ -6,7 +6,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -16,7 +16,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -26,7 +26,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -36,7 +36,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -46,7 +46,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -56,10 +56,81 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/severity"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#severity"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice",
+  "@id" : "http://dbpedia.org/resource/Medtronic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Product_recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Ventricular_assist_device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A corporate or administrative entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ]
+}, {
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-27"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "aking1997"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "MedTech Safety & Traceability Ontology (EUDAMED-MDR)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -70,13 +141,13 @@
     "@value" : "Active Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveImplant",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ActiveImplant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -87,10 +158,10 @@
     "@value" : "Active Implant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ContaminationRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ContaminationRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -101,10 +172,10 @@
     "@value" : "Contamination Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/CybersecurityRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#CybersecurityRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -115,30 +186,13 @@
     "@value" : "Cybersecurity Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id" : [ {
-    "@value" : "DEV-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name" : [ {
-    "@value" : "HeartMate 3 LVAD"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -148,11 +202,25 @@
     "@language" : "en",
     "@value" : "HeartMate 3 LVAD"
   } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://dbpedia.org/resource/Ventricular_assist_device"
+  "https://aking1997.github.io/medtech-safety-ontology/doc#device_id" : [ {
+    "@value" : "DEV-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#device_name" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -166,7 +234,7 @@
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/DiagnosticRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#DiagnosticRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -177,10 +245,10 @@
     "@value" : "Diagnostic Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -194,23 +262,10 @@
     "@id" : "_:genid2"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA-001",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2024-02-01T00:00:00"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id" : [ {
-    "@value" : "FSCA-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/status" : [ {
-    "@value" : "Open"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -220,34 +275,24 @@
     "@language" : "en",
     "@value" : "Safety Alert HeartMate 3"
   } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://dbpedia.org/resource/Product_recall"
+  "https://aking1997.github.io/medtech-safety-ontology/doc#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-01T00:00:00"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#INC-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id" : [ {
+    "@value" : "FSCA-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#status" : [ {
+    "@value" : "Open"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/INC-001",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#INC-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id" : [ {
-    "@value" : "INC-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "58"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2024-01-15T00:00:00"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -256,9 +301,29 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Serious patient injury - embolic stroke"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#incident_id" : [ {
+    "@value" : "INC-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "58"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-15T00:00:00"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableActiveDevice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableActiveDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -269,10 +334,10 @@
     "@value" : "Implantable Active Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ImplantableDevice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ImplantableDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -283,10 +348,10 @@
     "@value" : "Implantable Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InSituCorrection",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InSituCorrection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -297,10 +362,10 @@
     "@value" : "In Situ Correction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -311,10 +376,10 @@
     "@value" : "In Vitro Diagnostic Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Incident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -332,7 +397,7 @@
     "@id" : "_:genid5"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InfectionRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InfectionRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -343,10 +408,10 @@
     "@value" : "Infection Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -357,10 +422,10 @@
     "@value" : "Injury Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InterferenceRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InterferenceRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -371,25 +436,13 @@
     "@value" : "Interference Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/MAN-001",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#MAN-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/country" : [ {
-    "@value" : "Ireland"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id" : [ {
-    "@value" : "MAN-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/DEV-001"
-  } ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/name" : [ {
-    "@value" : "Medtronic plc"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -399,11 +452,20 @@
     "@language" : "en",
     "@value" : "Medtronic plc"
   } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://dbpedia.org/resource/Medtronic"
+  "https://aking1997.github.io/medtech-safety-ontology/doc#country" : [ {
+    "@value" : "Ireland"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id" : [ {
+    "@value" : "MAN-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice" : [ {
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#DEV-001"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#name" : [ {
+    "@value" : "Medtronic plc"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/MalfunctionRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#MalfunctionRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -414,10 +476,10 @@
     "@value" : "Malfunction Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -431,7 +493,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/MaterialRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#MaterialRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -442,16 +504,13 @@
     "@value" : "Material Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/RSK-003",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#RSK-003",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id" : [ {
-    "@value" : "RSK-003"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InjuryRisk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InjuryRisk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -460,9 +519,12 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Thrombosis - device-related"
+  } ],
+  "https://aking1997.github.io/medtech-safety-ontology/doc#risk_id" : [ {
+    "@value" : "RSK-003"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Recall",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Recall",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -473,10 +535,10 @@
     "@value" : "Recall"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -490,7 +552,7 @@
     "@id" : "_:genid6"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/SafetyAlert",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#SafetyAlert",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -501,10 +563,10 @@
     "@value" : "Safety Alert"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/SelfTestDevice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#SelfTestDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -515,10 +577,10 @@
     "@value" : "Self Test Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/InVitroDiagnosticDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#InVitroDiagnosticDevice"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/SeriousIncident",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#SeriousIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -529,10 +591,10 @@
     "@value" : "Serious Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Incident"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/UserNotice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#UserNotice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -543,10 +605,10 @@
     "@value" : "User Notice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/action_date",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#action_date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -557,58 +619,58 @@
     "@value" : "action_date"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/addressesIncident",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#addressesIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Connects a corrective action (FSCA) to the incident it addresses."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/FSCA"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#FSCA"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "addresses incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Incident"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/affectsDeviceType",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#affectsDeviceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links a specific risk category to the types of devices it generally affects."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affects device type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/associatedWithRisk",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#associatedWithRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links an incident to the identified IMDRF risk category."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "associated with risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/authorization_number",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#authorization_number",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -619,7 +681,7 @@
     "@value" : "authorization_number"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/closure_date",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#closure_date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -630,7 +692,7 @@
     "@value" : "closure_date"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/competent_authority",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#competent_authority",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -641,7 +703,7 @@
     "@value" : "competent_authority"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/contact_email",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#contact_email",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -652,7 +714,7 @@
     "@value" : "contact_email"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/corrective_action_taken",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#corrective_action_taken",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -663,7 +725,7 @@
     "@value" : "corrective_action_taken"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/countries_affected",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#countries_affected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -674,7 +736,7 @@
     "@value" : "countries_affected"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/country",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#country",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -685,7 +747,7 @@
     "@value" : "country"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/country_reported",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#country_reported",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -696,7 +758,7 @@
     "@value" : "country_reported"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/description",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -707,7 +769,7 @@
     "@value" : "description"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/detection_date",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#detection_date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -718,7 +780,7 @@
     "@value" : "detection_date"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/device_id",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#device_id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -729,7 +791,7 @@
     "@value" : "device_id"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/device_name",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#device_name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -740,7 +802,7 @@
     "@value" : "device_name"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/devices_affected",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#devices_affected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -751,7 +813,7 @@
     "@value" : "devices_affected"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_fsca_ref",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_fsca_ref",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -762,7 +824,7 @@
     "@value" : "eudamed_fsca_ref"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_incident_ref",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_incident_ref",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -773,7 +835,7 @@
     "@value" : "eudamed_incident_ref"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/eudamed_srn",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#eudamed_srn",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -784,7 +846,7 @@
     "@value" : "eudamed_srn"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/event_date",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#event_date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -795,7 +857,7 @@
     "@value" : "event_date"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/fsca_id",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#fsca_id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -806,34 +868,24 @@
     "@value" : "fsca_id"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/hasManufacturer",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#hasManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links a medical device to its manufacturer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/httpns/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions."
-  } ],
-  "https://w3id.org/mod#createdWith" : [ {
-    "@id" : "https://chowlk.linkeddata.es/"
-  } ]
-}, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/imdrf_code",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#imdrf_code",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -844,7 +896,7 @@
     "@value" : "imdrf_code"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/incident_id",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#incident_id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -855,7 +907,7 @@
     "@value" : "incident_id"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/intended_purpose",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#intended_purpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -866,38 +918,38 @@
     "@value" : "intended_purpose"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/involvesDevice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#involvesDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indicates the medical device involved in a specific incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "involves device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/is_active",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#is_active",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Boolean flag indicating if the device is active (powered)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/ActiveDevice"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#ActiveDevice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is_active"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/is_implantable",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#is_implantable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -908,7 +960,7 @@
     "@value" : "is_implantable"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/is_ivd",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#is_ivd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -919,7 +971,7 @@
     "@value" : "is_ivd"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/is_reusable",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#is_reusable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -930,7 +982,7 @@
     "@value" : "is_reusable"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturer_id",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#manufacturer_id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -941,24 +993,24 @@
     "@value" : "manufacturer_id"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/manufacturesDevice",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#manufacturesDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links a manufacturer to the devices it produces (Inverse of hasManufacturer)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "manufactures device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Device"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Device"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/name",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -969,7 +1021,7 @@
     "@value" : "name"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/outcome",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#outcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -980,7 +1032,7 @@
     "@value" : "outcome"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_age",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#patient_age",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -991,7 +1043,7 @@
     "@value" : "patient_age"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/patient_sex",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#patient_sex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1002,7 +1054,7 @@
     "@value" : "patient_sex"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/probability",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#probability",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1013,7 +1065,7 @@
     "@value" : "probability"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/regulatory_framework",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#regulatory_framework",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1024,7 +1076,7 @@
     "@value" : "regulatory_framework"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/report_date",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#report_date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1035,24 +1087,24 @@
     "@value" : "report_date"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/reportedBy",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#reportedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Identifies the manufacturer that reported the incident to EUDAMED."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Incident"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "reported by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Manufacturer"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Manufacturer"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_category",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#risk_category",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1063,7 +1115,7 @@
     "@value" : "risk_category"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_class",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#risk_class",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1074,7 +1126,7 @@
     "@value" : "risk_class"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_id",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#risk_id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1085,7 +1137,7 @@
     "@value" : "risk_id"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/risk_name",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#risk_name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1096,7 +1148,7 @@
     "@value" : "risk_name"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/scope",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#scope",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1107,21 +1159,21 @@
     "@value" : "scope"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/severity",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#severity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The severity level of a risk."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/Risk"
+    "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "severity"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/status",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#status",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1132,7 +1184,7 @@
     "@value" : "status"
   } ]
 }, {
-  "@id" : "file:///home/scarulli/chowlk_project/Chowlk/httpns/udi_di",
+  "@id" : "https://aking1997.github.io/medtech-safety-ontology/doc#udi_di",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1141,26 +1193,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "udi_di"
-  } ]
-}, {
-  "@id" : "http://dbpedia.org/resource/Medtronic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "http://dbpedia.org/resource/Product_recall",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "http://dbpedia.org/resource/Ventricular_assist_device",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A corporate or administrative entity."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Organization"
   } ]
 }, {
   "@id" : "https://w3id.org/mod#createdWith",
